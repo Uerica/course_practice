@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+  *{
+      margin:0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+
+  nav{
+      background-color: #87CEEB ;
+      height: 10vh;
+  }
+
+  .nav-links{
+      display: flex;
+      width: 50%;
+      list-style: none;/* 寫在ul就好瞜 */
+      height: 10vh;
+      justify-content: space-around;/* 主軸的多餘空間平均分配 */
+      align-items: center;
+      margin-left: auto;/* 問題:為何他可以將ul用100%撐開 margin-left auto為何會去右邊 */
+  }
+
+
+  .nav-links li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+  }
+
+  @media screen and (max-width:768px){
+        .line{
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin: 5px;
+        }/* 漢堡三條線 */
+
+            nav{
+                position: relative;
+            }
+
+        .nav-bar{
+            position:absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(0% , -50%)/* 置中 */
+        }
+
+      .nav-links{
+          position: fixed;
+          left:-600px;
+          background-color:#87CEEB;
+          height: 100vh;
+          width: 100vw;
+          flex-direction: column;
+          /* display:none; */
+        
+      }
+    
+  }
+
+
+  
+
+
+    
+    
+    
+    </style>
+</head>
+
+
+<body>
+<nav>
+<div class="nav-bar">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+
+    <ul class="nav-links">
+        <li><a href="#">遛狗景點</a></li>
+        <li><a href="#">揪團遛狗</a></li>
+        <li><a href="#">狗狗緣地</a></li>
+        <li><a href="#">狗狗抱報</a></li>
+        <li><a href="#">萌犬檔案</a></li>
+    </ul>
+</div>
+
+
+</nav>
+    
+
+
+
+
+</body>
+</html>
