@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 100%;
+            margin: auto;
+        }
+
+        .pic img {
+            width: 100%;
+        }
+
+        .txt {
+            width: 100%;
+        }
+        .item{
+         
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:768px){
+            .wrap{
+                max-width: 1200px;
+            }
+            .pic{
+                width: 60%;
+          
+              
+            }
+            .txt{
+                width: 40%;
+                display: flex;
+                align-items: flex-end;
+            }
+            .item{
+                display: flex;
+        
+            }
+            .txt p{
+                background-color: darkorchid;
+              
+          
+                
+            }
+            .item:nth-child(even) .pic{
+                order: 2;
+            }
+
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder" alt="">
+            </div>
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet consectetur,
+                    adipisicing elitLorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum odit dolorem, soluta iure vitae quae quis! Sapiente tempore
+                    consequuntur, blanditiis esse accusantium dolores quis sit sequi, alias voluptatibus id impedit!
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder" alt="">
+            </div>
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet consectetur,
+                    adipisicing elitLorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum odit dolorem, soluta iure vitae quae quis! Sapiente tempore
+                    consequuntur, blanditiis esse accusantium dolores quis sit sequi, alias voluptatibus id impedit!
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder" alt="">
+            </div>
+            <div class="txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet consectetur,
+                    adipisicing elitLorem ipsum dolor sit amet consectetur, adipisicing elitLorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum odit dolorem, soluta iure vitae quae quis! Sapiente tempore
+                    consequuntur, blanditiis esse accusantium dolores quis sit sequi, alias voluptatibus id impedit!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

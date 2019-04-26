@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+		 .col-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
+		 .col-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
+		 .col-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
+		 .col-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
+		 .col-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
+		 .col-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
+		 .col-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
+		 .col-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
+		 .col-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
+		.col-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
+		.col-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
+		.col-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }
+
+		
+		@media screen and (min-width: 768px){
+			 .col-md-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
+			 .col-md-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
+			 .col-md-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
+			 .col-md-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
+			 .col-md-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
+			 .col-md-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
+			 .col-md-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
+			 .col-md-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
+			 .col-md-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
+			.col-md-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
+			.col-md-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
+			.col-md-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+		}
+		
+		@media screen and (min-width: 992px){
+			 .col-lg-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
+			 .col-lg-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
+			 .col-lg-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
+			 .col-lg-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
+			 .col-lg-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
+			 .col-lg-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
+			 .col-lg-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
+			 .col-lg-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
+			 .col-lg-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
+			.col-lg-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
+			.col-lg-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
+			.col-lg-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+		}
+
+		
+		@media screen and (min-width: 1200px){
+			 .col-xl-1{ padding: 0 15px; box-sizing: border-box; width: 8.333333%; }
+			 .col-xl-2{ padding: 0 15px; box-sizing: border-box; width: 16.666666%; }
+			 .col-xl-3{ padding: 0 15px; box-sizing: border-box; width: 25%; }
+			 .col-xl-4{ padding: 0 15px; box-sizing: border-box; width: 33.333333%; }
+			 .col-xl-5{ padding: 0 15px; box-sizing: border-box; width: 41.666666%; }
+			 .col-xl-6{ padding: 0 15px; box-sizing: border-box; width: 50%; }
+			 .col-xl-7{ padding: 0 15px; box-sizing: border-box; width: 58.333333%; }
+			 .col-xl-8{ padding: 0 15px; box-sizing: border-box; width: 66.666666%; }
+			 .col-xl-9{ padding: 0 15px; box-sizing: border-box; width: 75%; }
+			.col-xl-10{ padding: 0 15px; box-sizing: border-box; width: 83.333333%; }
+			.col-xl-11{ padding: 0 15px; box-sizing: border-box; width: 91.666666%; }
+			.col-xl-12{ padding: 0 15px; box-sizing: border-box; width: 100%; }			
+		}
+
+
+        .wrap{
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-flow: row wrap;
+            margin: auto;
+            }
+            .pic{
+                padding: 5%;
+            }
+            
+            .pic img{
+                width: 100%;
+                position: relative;
+                right: -10%;
+            }
+
+            .txt{
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .txt p{
+                position: relative;
+                left:-10%;
+                margin-bottom: 40px;
+            }
+        
+
+
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="col-6">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis sed, quis culpa
+                    praesentium, tempora ullam nam ut corporis libero eveniet consequuntur, neque. Ipsa cumque dicta,
+                    tenetur, doloremque at iure!</p>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis sed, quis culpa
+                    praesentium, tempora ullam nam ut corporis libero eveniet consequuntur, neque. Ipsa cumque dicta,
+                    tenetur, doloremque at iure!</p>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="pic">
+                <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis debitis sed, quis culpa
+                    praesentium, tempora ullam nam ut corporis libero eveniet consequuntur, neque. Ipsa cumque dicta,
+                    tenetur, doloremque at iure!</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
